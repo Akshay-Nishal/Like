@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(175, 210, 241);
+}
+#head{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#container {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+    height: calc(70vh - 20px);
+    /* border: 2px solid black; */
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#main{
+    /* width: 80%; */
+    max-width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+button{
+    font-size: 23px;
+    padding: 2px 15px;
+    border-radius: 10px;
+    border: none;
+}
+#no{
+    background-color: rgb(250, 130, 130);
+}
+#yes{
+    background-color: #acffac;
+}
+#bottom-left-image {
+    position: fixed;
+    max-height: 100px;
+    bottom: 0;
+    left: 0;
+    opacity: .80;
+    /* margin: 10px;  */
+}
+</style>
+<body>
+    <div id="head">
+        <center>
+            <h2 id="qu">Do you like me 😗?</h2>
+        </center>
+    </div>
+    <div id="container">
+        <center>
+            <img id="main" src="./1.gif" alt="">
+            <br>
+            <button id="no">No</button>
+            <br>
+            <button style="margin-top: 30px;" id="yes">Yes</button>
+        </center>
+    </div>
+    <img src="./rose.png" id="bottom-left-image" alt="Bottom Left Image">
+
+    <script src="./sctipt.js"></script>
+</body>
+</html>
